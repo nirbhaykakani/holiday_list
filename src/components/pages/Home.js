@@ -3,10 +3,10 @@ import { useState,useEffect } from "react";
 import axios from 'axios';
 
 function Home(){
-    const [countries, setCountries] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [selectedCountry, setSelectedCountry] = useState("");
-    const [holidays, setHolidays] = useState([]);
+  const [countries, setCountries] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [selectedCountry, setSelectedCountry] = useState("");
+  const [holidays, setHolidays] = useState([]);
 
     useEffect(() => {
       if (!selectedCountry) return;
